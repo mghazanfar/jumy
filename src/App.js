@@ -2,6 +2,7 @@ import "./App.css";
 import { ThemeProvider, createTheme, Box } from "@material-ui/core";
 import { Appbar } from "./components/app-bar";
 import { ImageSection } from "./components/image-section";
+import { Footer } from "./components/footer";
 
 const theme = createTheme({
   typography: {
@@ -18,6 +19,7 @@ function App() {
           <ImageSection />
         </Box>
       </Box>
+      <Footer />
     </ThemeProvider>
   );
 }
