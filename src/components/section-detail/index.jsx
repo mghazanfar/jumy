@@ -12,14 +12,20 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "100%",
   },
+  footer:{
+    [theme.breakpoints.down('md')]:{
+      flexDirection:'column',
+      alignItems:"center"
+    }
+  }
 }));
 
 export const SectionDetail = () => {
   const classes = useStyles();
   return (
     <>
-      <Box border="1px solid #F2F2F2" p={4} position="relative">
-        <Box display="flex" justifyContent="space-between">
+      <Box border="1px solid #F2F2F2" p={4} position="relative" pb={0}>
+        <Box display="flex" justifyContent="space-between" className={classes.footer}>
           <Box display="flex">
             <Box mr={3} position="relative">
               <Avatar
@@ -80,10 +86,10 @@ export const SectionDetail = () => {
         <Box
           display="flex"
           flexWrap="wrap"
-          justifyContent="space-between"
+          justifyContent="space-evenly"
           mt={4}
         >
-          <Box width={134} height={134}>
+          <Box width={134} height={134} mb={4}>
             <img
               src={
                 "https://2.bp.blogspot.com/_vl9jVqDIpKk/TJotYAU55gI/AAAAAAAAArs/5pH4xm8kyDw/s1600/van-gogh-vincent-starry-night.jpg"
@@ -92,7 +98,7 @@ export const SectionDetail = () => {
               className={classes.boxImage}
             />
           </Box>
-          <Box width={134} height={134}>
+          <Box width={134} height={134} mb={4}>
             <img
               src={
                 "https://art-educ4kids.weebly.com/uploads/8/9/6/9/8969100/6893955_orig.jpg?707"
@@ -101,10 +107,10 @@ export const SectionDetail = () => {
               className={classes.boxImage}
             />
           </Box>
-          <Box width={134} height={134}>
+          <Box width={134} height={134} mb={4}>
             <img src={item} alt="img" className={classes.boxImage} />
           </Box>
-          <Box width={134} height={134}>
+          <Box width={134} height={134} mb={4}>
             <img
               src={
                 "https://mediaoffice.ae/-/media/2015/art-dubai-p.jpg?h=2333&w=3500&hash=E43D435902BA66877F24BC7473C24A4D"
@@ -122,7 +128,7 @@ export const SectionDetail = () => {
           right={0}
           bgcolor="#F2F2F2"
         />
-        <Box mt={4} justifyContent="space-between" display="flex">
+        <Box mt={4} justifyContent="space-between" display="flex" className={classes.footer}>
           <Box display="flex" mt={4} alignItems="center">
             <Box display="flex" alignItems="center">
               <Instagram />

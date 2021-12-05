@@ -45,6 +45,9 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: theme.spacing(3),
       width: "100%",
     },
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: theme.spacing(3),
+    },
   },
   searchIcon: {
     padding: theme.spacing(0, 2),
@@ -60,7 +63,10 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   toolbar:{
-    padding:0
+    padding:0,
+    [theme.breakpoints.between("sm", 'md')]:{
+      flexDirection:"column"
+    }
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 0),
