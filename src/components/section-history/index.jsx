@@ -9,6 +9,11 @@ const useStyles = makeStyles((theme) => ({
     width: 64,
     height: 64,
   },
+  responsive: {
+    [theme.breakpoints.down("sm")]:{
+      flexDirection:"column"
+    }
+  }
 }));
 
 export const SectionHistory = () => {
@@ -41,7 +46,7 @@ export const SectionHistory = () => {
         Resting refuge translates the symbiotic relationship between colors and
         nature.{" "}
       </Box>
-      <Box display="flex" justifyContent="space-between" mt={4}>
+      <Box display="flex" justifyContent="space-between" mt={4} className={classes.responsive}>
         <Box>
           <Box
             bgcolor="black"
@@ -51,6 +56,7 @@ export const SectionHistory = () => {
             fontSize={10}
             fontFamily="GilroySemiBold"
             lineHeight={"10px"}
+            display="inline"
           >
             CURRENT BID
           </Box>

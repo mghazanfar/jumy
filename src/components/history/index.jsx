@@ -1,4 +1,4 @@
-import { Avatar, Box } from "@material-ui/core";
+import { Avatar, Box, makeStyles } from "@material-ui/core";
 import { CallMade, Check } from "@material-ui/icons";
 import React from "react";
 const historyData = [
@@ -12,7 +12,21 @@ const historyData = [
     {src:"https://v4.mui.com/static/images/avatar/2.jpg",username:"brianhold", bid:"1.15 ETH", time:"59 minutes ago"},
 ]
 
+const useStyles = makeStyles((theme) => ({
+  textContainer:{
+    [theme.breakpoints.down('xs')]:{
+      flexDirection:"column"
+    }
+  },
+  madeBid:{
+    [theme.breakpoints.down('xs')]:{
+      margin:0
+    }
+  },
+
+}));
 const HistoryItem = ({src,username, bid,time}) => {
+  const classes = useStyles()
   return (
     <Box display="flex" justifyContent="space-between" mb={4}>
       <Box display="flex">
@@ -37,7 +51,7 @@ const HistoryItem = ({src,username, bid,time}) => {
           </Box>
         </Box>
         <Box>
-          <Box display="flex">
+          <Box display="flex" className={classes.textContainer}>
             <Box fontSize={16} fontFamily="GilroySemiBold" lineHeight="22.4px">
               @{username}{" "}
             </Box>
@@ -47,6 +61,7 @@ const HistoryItem = ({src,username, bid,time}) => {
               lineHeight="22.4px"
               letterSpacing="-0.01em"
               mx={1}
+              className={classes.madeBid}
             >
               made a bid for{" "}
             </Box>

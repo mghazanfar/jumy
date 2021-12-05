@@ -12,12 +12,16 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "100%",
   },
-  footer:{
-    [theme.breakpoints.down('md')]:{
-      flexDirection:'column',
-      alignItems:"center"
-    }
-  }
+  footer: {
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
+      alignItems: "center",
+      marginBottom: 24
+    },
+  },
+  description: {
+    [theme.breakpoints.down("md")]: { marginTop: 24 },
+  },
 }));
 
 export const SectionDetail = () => {
@@ -25,7 +29,12 @@ export const SectionDetail = () => {
   return (
     <>
       <Box border="1px solid #F2F2F2" p={4} position="relative" pb={0}>
-        <Box display="flex" justifyContent="space-between" className={classes.footer}>
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          alignItems="center"
+          className={classes.footer}
+        >
           <Box display="flex">
             <Box mr={3} position="relative">
               <Avatar
@@ -77,6 +86,7 @@ export const SectionDetail = () => {
             lineHeight="22.4px"
             color="#575757"
             maxWidth="54%"
+            className={classes.description}
           >
             Jumaker is a contemporary digital Artist with a unique signature and
             very authentic genr...{" "}
@@ -128,23 +138,40 @@ export const SectionDetail = () => {
           right={0}
           bgcolor="#F2F2F2"
         />
-        <Box mt={4} justifyContent="space-between" display="flex" className={classes.footer}>
+        <Box
+          mt={4}
+          justifyContent="space-between"
+          display="flex"
+          className={classes.footer}
+        >
           <Box display="flex" mt={4} alignItems="center">
             <Box display="flex" alignItems="center">
               <Instagram />
-              <Box ml={1} fontFamily="GilroySemiBold" fontSize="16px">@Jumaker</Box>
+              <Box ml={1} fontFamily="GilroySemiBold" fontSize="16px">
+                @Jumaker
+              </Box>
             </Box>
 
             <Box display="flex" ml={3} alignItems="center">
               <Twitter />
-              <Box ml={1} fontFamily="GilroySemiBold" fontSize="16px">@Jumaker</Box>
+              <Box ml={1} fontFamily="GilroySemiBold" fontSize="16px">
+                @Jumaker
+              </Box>
             </Box>
           </Box>
 
-
-
           <Box display="flex" mt={4} alignItems="center">
-              <Box component={ButtonBase} bgcolor="black" width={144} height={40} textAlign="center" color="white" fontFamily="GilroySemiBold">Follow</Box>
+            <Box
+              component={ButtonBase}
+              bgcolor="black"
+              width={144}
+              height={40}
+              textAlign="center"
+              color="white"
+              fontFamily="GilroySemiBold"
+            >
+              Follow
+            </Box>
 
             <Box display="flex" ml={3} color="#979797">
               <CallMade />
