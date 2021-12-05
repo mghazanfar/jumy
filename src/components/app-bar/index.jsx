@@ -14,6 +14,7 @@ import { Box, ButtonBase, Link } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
+    marginTop: 16
   },
   dp: {
     width: 29,
@@ -57,6 +58,9 @@ const useStyles = makeStyles((theme) => ({
   inputRoot: {
     color: "inherit",
     width: "100%",
+  },
+  toolbar:{
+    padding:0
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 0),
@@ -206,7 +210,7 @@ export const Appbar = () => {
   return (
     <div className={classes.grow}>
       <AppBar position="static" color="transparent" elevation={0}>
-        <Toolbar>
+        <Toolbar className={classes.toolbar}>
           <Box>{logo}</Box>
           <Box
             className={classes.search}
