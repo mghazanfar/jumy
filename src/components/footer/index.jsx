@@ -1,8 +1,22 @@
-import { Box, ButtonBase } from "@material-ui/core";
+import { Box, ButtonBase, makeStyles } from "@material-ui/core";
 import { ArrowUpward } from "@material-ui/icons";
 import React from "react";
 
+const useStyles = makeStyles((theme) => ({
+  linkContainer: {
+    [theme.breakpoints.down("sm")]: {
+      flexDirection:"column",
+      textAlign:'center',
+      alignItems:"center",
+      '& div':{
+        marginBottom:24
+      }
+    }
+  },
+}));
+
 export const Footer = () => {
+  const classes = useStyles();
   return (
     <Box bgcolor="black" p={5} position="relative">
       <Box
@@ -31,7 +45,7 @@ export const Footer = () => {
           Tell us about you
         </Box>
       </Box>
-      <Box display="flex" justifyContent="space-between">
+      <Box display="flex" justifyContent="space-between"className={classes.linkContainer}>
         <Box
           fontSize={14}
           lineHeight={"19.6px"}
@@ -72,7 +86,7 @@ export const Footer = () => {
           right={0}
           bgcolor="#151515"
         />
-      <Box display="flex" justifyContent="space-between" mt={9} pt={5}>
+      <Box display="flex" justifyContent="space-between" mt={9} pt={5}className={classes.linkContainer}>
         <Box
           fontSize={14}
           lineHeight={"19.6px"}

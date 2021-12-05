@@ -13,10 +13,10 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
   },
   footer: {
+    marginBottom: 24,
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
       alignItems: "center",
-      marginBottom: 24
     },
   },
   description: {
