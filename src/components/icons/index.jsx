@@ -10,3 +10,7 @@ export const logo = <svg width="84" height="56" viewBox="0 0 84 56" fill="none" 
 export const wave = <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 9.00523H5.79767L5.80918 8.99765L8.87745 1L15.1221 17L18.1779 9.00122L18.1894 8.99363H23" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+
+export const burger = <svg xmlns="http://www.w3.org/2000/svg" width="13" height="23" viewBox="0 0 13 23" fill="none">
+<path d="M0 23H13V20.5293H0V23ZM0.0401236 2.4707H12.7994V0H0.0401236V2.4707ZM1.2037 12.5332H11.716V10.0625H1.2037V12.5332Z" fill="black"/>
+</svg>

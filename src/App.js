@@ -14,7 +14,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Box mx={5}>
         <Appbar />
-        <Box mt={8}>
+        <Box mt={7} mb={11}>
           <ImageSection />
         </Box>
       </Box>
