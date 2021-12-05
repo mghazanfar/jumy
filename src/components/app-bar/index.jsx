@@ -199,8 +199,8 @@ export const Appbar = () => {
         <Box
           component={ButtonBase}
           fontFamily="GilroySemiBold"
-          bgcolor="black"
-          color="white"
+          bgcolor="black !important"
+          color="white !important"
           display="flex"
           width={156}
           height={44}
@@ -269,8 +269,8 @@ export const Appbar = () => {
               component={ButtonBase}
               fontFamily="GilroySemiBold"
               ml={5}
-              bgcolor="black"
-              color="white"
+              bgcolor="black !important"
+              color="white !important"
               display="flex"
               width={156}
               height={44}

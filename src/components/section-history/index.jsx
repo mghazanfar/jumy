@@ -159,11 +159,11 @@ export const SectionHistory = () => {
       </Box>
       <Box
         component={ButtonBase}
-        bgcolor="black"
+        bgcolor="black !important"
         width={"100%"}
         height={56}
         textAlign="center"
-        color="white"
+        color="white !important"
         fontFamily="GilroySemiBold"
         mt={4}
         mb={9}

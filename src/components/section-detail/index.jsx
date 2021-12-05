@@ -163,11 +163,11 @@ export const SectionDetail = () => {
           <Box display="flex" mt={4} alignItems="center">
             <Box
               component={ButtonBase}
-              bgcolor="black"
+              bgcolor="black !important"
               width={144}
               height={40}
               textAlign="center"
-              color="white"
+              color="white !important"
               fontFamily="GilroySemiBold"
             >
               Follow

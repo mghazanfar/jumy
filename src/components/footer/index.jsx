@@ -34,8 +34,8 @@ export const Footer = () => {
         <Box
           component={ButtonBase}
           fontFamily="GilroySemiBold"
-          color="black"
-          bgcolor="#FFFFFF"
+          color="black !important"
+          bgcolor="#FFFFFF !important"
           width={235}
           height={56}
           textAlign="center"
