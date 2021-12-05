@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-Regular.ttf) format('truetype');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'GilroyItalic';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-RegularItalic.ttf) format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'GilroyBlack';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-Black.ttf) format('truetype');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: 'GilroyBlackItalic';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-BlackItalic.ttf) format('truetype');
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: 'GilroyBold';
+  src: local('GilroyBold'), url(./assets/fonts/gilroy/Gilroy-Bold.ttf) format('truetype');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: 'GilroyBoldItalic';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-BoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyExtraBold';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyExtraBoldItalic';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-ExtraBoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyHeavy';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-Heavy.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyHeavyItalic';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-HeavyItalic.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'GilroyLight';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyLightItalic';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyMedium';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyMediumItalic';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-MediumItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroySemiBold';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroySemiBoldItalic';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-SemiBoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyThin';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-Thin.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyThinItalic';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-ThinItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyUltraLight';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-UltraLight.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GilroyUltraLightItalic';
+  src: local('Gilroy'), url(./assets/fonts/gilroy/Gilroy-UltraLightItalic.ttf) format('truetype');
 }
