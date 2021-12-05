@@ -165,8 +165,8 @@ export const SectionHistory = () => {
         textAlign="center"
         color="white !important"
         fontFamily="GilroySemiBold"
-        mt={4}
-        mb={9}
+        mt={'32px !important'}
+        mb={'72px !important'}
       >
         Cancel Sale
       </Box>
