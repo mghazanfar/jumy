@@ -1,6 +1,7 @@
 import { Box, ButtonBase, makeStyles } from '@material-ui/core';
 import React from 'react';
 import logo from '../../assets/color-logo.png'
+import { History } from '../history';
 import { burger } from '../icons';
 
 const useStyles = makeStyles((theme) => ({
@@ -49,8 +50,10 @@ export const SectionHistory = () => {
             </Box>
 
         </Box>
-        <Box component={ButtonBase} bgcolor="black" width={'100%'} height={56} textAlign="center" color="white" fontFamily="GilroySemiBold" mt={4}>Cancel Sale</Box>
+        <Box component={ButtonBase} bgcolor="black" width={'100%'} height={56} textAlign="center" color="white" fontFamily="GilroySemiBold" mt={4} mb={9}>Cancel Sale</Box>
 
-        
+        <History />
+
+
     </Box>
 }
